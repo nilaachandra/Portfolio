@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="assets/main.css">
+  <link rel="stylesheet" type="text/css" href="assets/mediaqueries.css">
+  <script src="https://kit.fontawesome.com/0e475e9fd1.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">NILAA</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">NILAA</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="images/nilaa3.png" alt="Nilaa's profile picture" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello I'm</p>
+      <h1 class="title" id="element"></h1>
+      <p class="section__text__p2">A Data Enthusiast, Web Developer and Freelancer</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('otherfiles/L Nila Chandra Singha pdf.pdf')">
+          Download CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          Contact Info
+        </button>
+      </div>
+      <div id="socials-container">
+        <div class="icon">
+          <i onclick="location.href='https://nilalaishram@gmail.com'" class="fa-solid fa-envelope"></i>
+          <i onclick="location.href='#'" class="fab fa-facebook-f"></i>
+          <i onclick="location.href='https://twitter.com/nilaacodes'" class="fab fa-twitter"></i>
+          <i onclick="location.href='https://linkedin.com/in/nila-chandra-laishram-15a589256'"
+            class="fab fa-linkedin-in"></i>
+          <i onclick="location.href='https://github.com/nilaachandra'" class="fab fa-github"></i>
+          <i onclick="location.href='https://instagram.com/niillaaa.py'" class="fab fa-instagram"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <h1 class="me">About Me</h1>
+    <div class="section-container">
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h3>Experience</h3>
+            <p>Assistant Teacher <br>SkyIL Computer Institute<br>May 2023-Present</p>
+          </div>
+          <div class="details-container">
+            <h3>Education</h3>
+            <p>B.Sc. in Geology<br>with Mathematics & Statistics<br>2019-2022</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            I'm a self-taught data enthusiast with a passion for cutting-edge technology.
+            Proficient in Python, including Pandas, Numpy, and Scikit Learn, I leverage
+            data analysis to draw insights and tell compelling stories. I also have a keen
+            interest in web development as a side hobby. I'm constantly learning and seeking
+            opportunities to apply my skills for greater efficiency and productivity.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="projects">
+    <h1 class="me">Projects</h1>
+    <div class="experience-details-container">
+      <div class="project-container">
+        <div class="pj-container color-container">
+          <div class="article-container">
+            <img src="images/creditjpg.png" alt="Project 1" class="project-img" />
+          </div>
+          <h3 class="experience-sub-title project-title">Credit Cards Approval Prediction</h3>
+          <p class="techinfo">Tech Used: Pandas, Matplotlib, Numpy, Seaborn, ScikitLearn, NLTK</p>
+          <div class="btn-container2">
+            <button class="btn2 btn-color-3 project-btn"
+              onclick="location.href='https://github.com/nilaachandra/Credit-Cards-Approval-Prediction'">
+              Show Project
+            </button>
+          </div>
+        </div>
+        <div class="pj-container color-container">
+          <div class="article-container">
+            <img src="images/booksjpg.jpg" alt="Project 2" class="project-img" />
+          </div>
+          <h3 class="experience-sub-title project-title">Book Recommender System</h3>
+          <p class="techinfo">Tech Used: Pandas, Matplotlib, Numpy, Seaborn, ScikitLearn, NLTK</p>
+          <div class="btn-container">
+            <button class="btn2 btn-color-3 project-btn"
+              onclick="location.href='https://github.com/nilaachandra/book_recommender_system'">
+              Show Project
+            </button>
+          </div>
+        </div>
+        <div class="pj-container color-container">
+          <div class="article-container">
+            <img src="images/Netflix.jpg" alt="Project 3" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">NETFLIX Data Analysis</h2>
+          <p class="techinfo">Tech Used: Pandas, Matplotlib, Numpy, Seaborn, ScikitLearn, NLTK</p>
+          <div class="btn-container2">
+            <button class="btn2 btn-color-3 project-btn"
+              onclick="location.href='https://github.com/nilaachandra/NETFLIX-Data-Analysis'">
+              Show Project
+            </button>
+          </div>
+        </div>
+        <div class="pj-container color-container">
+          <div class="article-container">
+            <img src="images/Football-Transfers.jpg" alt="Project 4" class="project-img" />
+          </div>
+          <h3 class="experience-sub-title project-title">Football Transfers Analysis</h3>
+          <p class="techinfo">Tech Used: Pandas, Matplotlib, Numpy, Seaborn</p>
+          <div class="btn-container2">
+            <button class="btn2 btn-color-3 project-btn"
+              onclick="location.href='https://github.com/nilaachandra/Football_transfer_analysis'">
+              Show Project
+            </button>
+          </div>
+        </div>
+        <div class="pj-container color-container">
+          <div class="article-container">
+            <img src="images/uservalidation.jpg" alt="Project 2" class="project-img" />
+          </div>
+          <h3 class="experience-sub-title project-title">User Credentials Validation</h3>
+          <p class="techinfo">Tech Used: HTML, CSS, JavaScript, Python(Flask), MySQL</p>
+          <div class="btn-container2">
+            <button class="btn2 btn-color-3 project-btn"
+              onclick="location.href='https://github.com/nilaachandra/Sign-Up-and-Sign-In'">
+              Show Project
+            </button>
+          </div>
+        </div>
+        <div class="pj-container color-container">
+          <div class="article-container">
+            <img src="images/qr-code.jpg" alt="Project 2" class="project-img" />
+          </div>
+          <h3 class="experience-sub-title project-title">QR CODE Generator</h3>
+          <p class="techinfo">Tech Used: HTML,CSS,JavaScript, Python(Flask)</p>
+          <div class="btn-container2">
+            <button class="btn2 btn-color-3 project-btn"
+              onclick="location.href='https://github.com/nilaachandra/QR-Code-Generator'">
+              Show Project
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="more">
+        <button class="btn2 btn-color-2 project-btn"
+          onclick="location.href='https://github.com/nilaachandra?tab=repositories'">
+          More Projects
+        </button>
+      </div>
+    </div>
+    </div>
+  </section>
+  <section id="skills">
+    <h1 class="me">Skills</h1>
+    <div class="skillsc">
+      <div class="skills-container">
+        <h3>Data Science & Analysis</h3>
+        <div class="skill-icons-container">
+          <div class="skill-image-container">
+            <img src="images/excel.png" class="skill-image">
+            <p class="sk">Excel</p>
+          </div>
+          <div class="skill-image-container">
+            <img src="images/pandas.png" class="skill-image">
+            <p class="sk">Pandas</p>
+          </div>
+          <div class="skill-image-container">
+            <img src="images/matplotlib.png" class="skill-image">
+            <p class="sk">Matplotlib</p>
+          </div>
+          <div class="skill-image-container">
+            <img src="images/Scikit learn Logo Vector.png" class="skill-image">
+            <p class="sk">ScikitLearn</p>
+          </div>
+          <div class="skill-image-container">
+            <img src="images/python (2).png" class="skill-image">
+            <p class="sk">NLTK</p>
+          </div>
+          <div class="skill-image-container">
+            <img src="images/MySQL_logo_PNG6.png" class="skill-image">
+            <p class="sk">MySQL</p>
+          </div>
+        </div>
+      </div>
+      <div class="skills-container">
+        <h3>Web Development</h3>
+        <div class="skill-icons-container">
+          <div class="skill-image-container">
+            <img src="images/html1.png" class="skill-image">
+            <p class="sk">HTML</p>
+          </div>
+          <div class="skill-image-container">
+            <img src="images/css1.png" class="skill-image">
+            <p class="sk">CSS</p>
+          </div>
+          <div class="skill-image-container">
+            <img src="images/JavaScript-logo.png" class="skill-image">
+            <p class="sk">JavaScript</p>
+          </div>
+          <div class="skill-image-container">
+            <img src="images/flask1.png" class="skill-image">
+            <p class="sk">Flask</p>
+          </div>
+        </div>
+      </div>
+      <div class="skills-container">
+        <h3>Databases</h3>
+        <div class="skill-icons-container">
+          <div class="skill-image-container">
+            <img src="images/MySQL_logo_PNG6.png" class="skill-image">
+            <p class="sk">MySQL</p>
+          </div>
+          <div class="skill-image-container">
+            <img src="images/PostgreSQL.png" class="skill-image">
+            <p class="sk">PostgreSQL</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  </section>
+  <section id="contact">
+    <h1 class="me">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="icon">
+        <i onclick="location.href='https://nilalaishram@gmail.com'" class="fa-solid fa-envelope"></i>
+        <i onclick="location.href='#'" class="fab fa-facebook-f"></i>
+        <i onclick="location.href='https://twitter.com/nilaacodes'" class="fab fa-twitter"></i>
+        <i onclick="location.href='https://linkedin.com/in/nila-chandra-laishram-15a589256'"
+          class="fab fa-linkedin-in"></i>
+        <i onclick="location.href='https://github.com/nilaachandra'" class="fab fa-github"></i>
+        <i onclick="location.href='https://instagram.com/niillaaa.py'" class="fab fa-instagram"></i>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <nav class="botnav">
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Project</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Copyright &#169; 2023 Nila Chandra Laishram</p>
+  </footer>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script src="assets/scripts.js"></script>
+</body>
+
+</html>
